@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
+import Link from 'next/link';
 
 const navigationData = {
   main: [
-    { title: "About", url: "#about" },
-    { title: "Ideas", url: "#ideas" },
-    { title: "CV", action: "showCv" },
+    { title: "Home", url: "/" },
   ],
   webInterface: [
     { title: "Eazifunds", url: "#berkeleytime" },
@@ -54,22 +53,30 @@ export default function ScrollSidebar() {
   <div className="mt-6">
     {label && (
       <h3
-  className="text-lg font-normal uppercase tracking-wide text-gray-700 mb-3 border-b border-gray-300 pb-1 font-rubik"
-  style={{ paddingLeft: "1rem" }} 
->
-  {label}
-</h3>
+        className="text-lg font-normal uppercase tracking-wide text-gray-700 mb-3 border-b border-gray-300 pb-1 font-rubik"
+        style={{ paddingLeft: "1rem" }}
+      >
+        {label}
+      </h3>
     )}
     <ul className="list-none m-0 p-0">
       {items.map((item) => (
         <li key={item.title}>
-          <button
-            onClick={() => handleItemClick(item)}
-            className="block w-full text-left rounded-[25px] px-4 py-2 transition-colors duration-300 font-rubik text-lg text-gray-800 hover:bg-gray-200"
-            style={{ paddingLeft: "1rem" }} // same left padding as heading
-          >
-            {item.title}
-          </button>
+          {item.url?.startsWith("/") || item.url?.startsWith("#") ? (
+            <Link
+              href={item.url}
+              className="block w-full text-left rounded-[25px] px-4 py-2 transition-colors duration-300 font-rubik text-lg text-gray-800 hover:bg-gray-200"
+            >
+              {item.title}
+            </Link>
+          ) : (
+            <button
+              onClick={() => handleItemClick(item)}
+              className="block w-full text-left rounded-[25px] px-4 py-2 transition-colors duration-300 font-rubik text-lg text-gray-800 hover:bg-gray-200"
+            >
+              {item.title}
+            </button>
+          )}
         </li>
       ))}
     </ul>
@@ -79,9 +86,9 @@ export default function ScrollSidebar() {
   return (
     <>
       <aside
-        className={`fixed top-0 left-0 h-full w-64 z-50 transition-all duration-700 ease-in-out 
-          bg-white/90 backdrop-blur-md shadow-lg border-r border-gray-200 p-6 font-rubik
-          ${showSidebar ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"}`}
+        className={`fixed top-10 right-8 h-full w-64 z-50 transition-all duration-700 ease-in-out 
+          p-6 font-rubik
+          ${showSidebar ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}
       >
         {/* Uncomment if you want main nav */}
         {/* {renderSection(null, navigationData.main)} */}

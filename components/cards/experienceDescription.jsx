@@ -1,9 +1,9 @@
-function ExperienceDescription({ company, role, endDate, description }) {
+function ExperienceDescription({ company, role, endDate, description, gradientStart, gradientMid, gradientEnd, image }) {
   return (
-    <div className="rounded-2xl p-2 mb-14 relative group overflow-visible cursor-pointer">
+    <div className="rounded-2xl p-2 mb-14 relative group overflow-visible cursor-pointer ">
       {/* Outer container with black border and white outline */}
       <div
-        className="relative w-[60vw] h-[60vh] rounded-[16px] border-[16px] border-[#000000] shadow-md overflow-hidden"
+        className="relative w-[60vw] h-[60vh] rounded-[16px] border-[10px] border-[#000000] shadow-md overflow-hidden"
         style={{
           outline: "1px solid #212529",
           outlineOffset: "-16px",
@@ -14,12 +14,11 @@ function ExperienceDescription({ company, role, endDate, description }) {
         <div className="absolute inset-0 bg-[#212529] transition-opacity duration-[1200ms] ease-in-out z-0 pointer-events-none"></div>
 
         <div
-          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-[1200ms] ease-in-out z-0 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(circle at top, #274c77 5%, #001d3d 80%, #212529 100%)",
-          }}
-        ></div>
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-[1200ms] ease-in-out z-0 pointer-events-none"
+        style={{
+          background: `linear-gradient( ${gradientStart} 0%, ${gradientMid} 50%, ${gradientEnd} 100%)`,
+        }}
+      ></div>
 
         {/* Content */}
         <div className="relative z-10 p-10 w-full h-full font-Rubik">
@@ -40,10 +39,10 @@ function ExperienceDescription({ company, role, endDate, description }) {
 
         {/* Floating image */}
         <img
-          src="/image/eazifunds.png"
+          src={image}
           alt="iPad Design"
-          className="absolute left-1/2 w-[35vw] z-10 transform -translate-x-1/2 bottom-[-10%] 
-            transition-all duration-500 ease-in-out group-hover:bottom-[-8%] group-hover:scale-102"
+          className="absolute left-1/2 w-[40vw] z-6 transform -translate-x-1/2 bottom-[-5%] height-[100vh]
+            transition-all duration-500 ease-in-out group-hover:bottom-[-2%] group-hover:scale-102"
         />
       </div>
     </div>

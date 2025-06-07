@@ -49,24 +49,40 @@ const Experience = () => {
               role="Frontend Developer Intern"
               endDate="'25"
               description="Setting a future for all people"
+              gradientStart="#274c77"
+              gradientMid="#001d3d"
+              gradientEnd="#212529"
+              image={"/image/e.png"}
             />
             <ExperienceDescription
               company="Popper"
               role="Frontend Developer Intern"
               endDate="'24"
-              description="Setting a future for all people"
+              description="Socalizing with rewards"
+              gradientStart="#6B5FA5"
+              gradientMid="#5e548e"
+              gradientEnd="#212529"
+              image={"/image/p.png"}
             />
             <ExperienceDescription
               company="SF Living Wages Coalition"
               role="Frontend Intern"
               endDate="'24"
-              description="Setting a future for all people"
+              description="Helping to end poverty in SF"
+              gradientStart="#e5383b"
+              gradientMid="#660708"
+              gradientEnd="#212529"
+              image={"/image/sf.png"}
             />
             <ExperienceDescription
               company="City College of San Francisco"
               role="Computer Science Tutor Assistant"
               endDate="'24"
-              description="Setting a future for all people"
+              description="Tutoring beginning students in CS"
+              gradientStart="#c1121f"
+              gradientMid="#d62828"
+              gradientEnd="#212529"
+              image={"/image/s.png"}
             />
           </div>
 
