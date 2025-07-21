@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import ExperienceDescription from './experienceDescription';
+import ProjectDescription from './projectDescription';
 
 const Experience = () => {
   const ref = useRef(null);
@@ -44,6 +45,20 @@ const Experience = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}
           >
+            <h1 className="text-[50px] mb-10 font-medium">Projects</h1>
+            <div className='flex gap-[1.5rem]'>
+              <ProjectDescription 
+                title="Portfolio"
+                tagline="Showcase"
+                imageUrl="/image/port.png" 
+              />
+              <ProjectDescription 
+                title="Cache Manager"
+                tagline="Data Management"
+                imageUrl="/image/cac.png" 
+              />
+            </div>
+            <h1 className="text-[50px] mb-10 font-medium">Experience</h1>
             <ExperienceDescription
               company="Eazifunds"
               role="Frontend Developer Intern"
@@ -52,7 +67,8 @@ const Experience = () => {
               gradientStart="#274c77"
               gradientMid="#001d3d"
               gradientEnd="#212529"
-              image={"/image/e.png"}
+              image="/image/e.png"
+              link="/Eazifunds"
             />
             <ExperienceDescription
               company="Popper"
@@ -63,6 +79,7 @@ const Experience = () => {
               gradientMid="#5e548e"
               gradientEnd="#212529"
               image={"/image/p.png"}
+              link="/eazifunds"
             />
             <ExperienceDescription
               company="SF Living Wages Coalition"
@@ -73,6 +90,7 @@ const Experience = () => {
               gradientMid="#660708"
               gradientEnd="#212529"
               image={"/image/sf.png"}
+              link="/eazifunds"
             />
             <ExperienceDescription
               company="City College of San Francisco"
@@ -83,6 +101,7 @@ const Experience = () => {
               gradientMid="#d62828"
               gradientEnd="#212529"
               image={"/image/s.png"}
+              link="/eazifunds"
             />
           </div>
 

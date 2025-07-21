@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         rubik: ['Rubik', 'sans-serif'],
-        cormorant: ['Rubik','Cormorant', 'serif'],
+        cormorant: ['Cormorant', 'serif'],
       },
       keyframes: {
         'fade-in': {

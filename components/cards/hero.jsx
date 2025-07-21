@@ -7,12 +7,16 @@ function Hero() {
       <h1 className="text-[90px] leading-none opacity-0 animate-fade-in">MARCO LEE</h1>
 
       {/* Tagline */}
+      <p className="text-[30px] leading-none -mt-3 mb-20 opacity-0 animate-fade-in-delay">
+        FRONTEND DEVELOPER PORTFOLIO
+      </p>
+
       <p className="text-[33px] leading-none -mt-3 mb-20 opacity-0 animate-fade-in-delay">
-        WEB DEVELOPMENT PORTFOLIO
+        Based in San Francisco. Driven by a passion for building refined, intuitive UI/UX experiences
       </p>
 
       {/* Downward Arrow */}
-      <div
+      {/* <div
         className="mt-6 opacity-0 animate-fade-in-delay-long transform rotate-90"
       >
         <img
@@ -20,7 +24,7 @@ function Hero() {
           alt="Down Arrow"
           className="w-auto h-auto cursor-pointer transition-transform duration-500 hover:translate-y-4"
         />
-      </div>
+      </div> */}
     </div>
   );
 }

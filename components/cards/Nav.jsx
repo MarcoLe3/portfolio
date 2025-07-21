@@ -6,7 +6,7 @@ const navigationData = {
     { title: "Home", url: "/" },
   ],
   webInterface: [
-    { title: "Eazifunds", url: "#berkeleytime" },
+    { title: "Eazifunds", url: "/Eazifunds" },
     { title: "Popper", url: "#margeta" },
     { title: "SF Living Wages Coalition", url: "#propertyguru" },
     { title: "City of San Francisco", url: "#micro-interactions" },
@@ -124,7 +124,6 @@ export default function ScrollSidebar() {
           <style jsx>{`
             .loader {
               border: 4px solid transparent;
-              border-top: 4px solid #3498db;
               border-radius: 50%;
               width: 48px;
               height: 48px;
