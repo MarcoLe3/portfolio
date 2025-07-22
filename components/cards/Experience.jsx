@@ -51,6 +51,7 @@ const Experience = () => {
                 title="Portfolio"
                 tagline="Showcase"
                 imageUrl="/image/port.png" 
+                link="/Portfolio"
               />
               <ProjectDescription 
                 title="Cache Manager"
@@ -68,7 +69,7 @@ const Experience = () => {
               gradientMid="#001d3d"
               gradientEnd="#212529"
               image="/image/e.png"
-              link="/Eazifunds"
+              link="/Contact_Page"
             />
             <ExperienceDescription
               company="Popper"
@@ -79,7 +80,7 @@ const Experience = () => {
               gradientMid="#5e548e"
               gradientEnd="#212529"
               image={"/image/p.png"}
-              link="/eazifunds"
+              link="/Contact_Page"
             />
             <ExperienceDescription
               company="SF Living Wages Coalition"
@@ -90,7 +91,7 @@ const Experience = () => {
               gradientMid="#660708"
               gradientEnd="#212529"
               image={"/image/sf.png"}
-              link="/eazifunds"
+              link="/Contact_Page"
             />
             <ExperienceDescription
               company="City College of San Francisco"
@@ -101,7 +102,7 @@ const Experience = () => {
               gradientMid="#d62828"
               gradientEnd="#212529"
               image={"/image/s.png"}
-              link="/eazifunds"
+              link="/Contact_Page"
             />
           </div>
 
