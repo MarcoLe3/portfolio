@@ -2,10 +2,8 @@ import { useEffect, useState } from "react";
 import Link from 'next/link';
 
 const navigationData = {
-  main: [
-    { title: "Home", url: "/" },
-  ],
-  webInterface: [
+  main: [{ title: "Home", url: "/" }],
+  Exprience: [
     { title: "Eazifunds", url: "/Eazifunds" },
     { title: "Popper", url: "#margeta" },
     { title: "SF Living Wages Coalition", url: "#propertyguru" },
@@ -22,16 +20,28 @@ export default function ScrollSidebar() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [showCvModal, setShowCvModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isAllowedWidth, setIsAllowedWidth] = useState(true);
+
+  useEffect(() => {
+    const checkWidth = () => {
+      setIsAllowedWidth(window.innerWidth >= 1400);
+    };
+
+    checkWidth();
+    window.addEventListener("resize", checkWidth);
+
+    return () => window.removeEventListener("resize", checkWidth);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100 && !showSidebar) {
+      if (window.scrollY > 100 && !showSidebar && isAllowedWidth) {
         setShowSidebar(true);
       }
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [showSidebar]);
+  }, [showSidebar, isAllowedWidth]);
 
   const handleItemClick = (item) => {
     if (item.action === "showCv") {
@@ -50,51 +60,51 @@ export default function ScrollSidebar() {
   };
 
   const renderSection = (label, items) => (
-  <div className="mt-6">
-    {label && (
-      <h3
-        className="text-lg font-normal uppercase tracking-wide text-gray-700 mb-3 border-b border-gray-300 pb-1 font-rubik"
-        style={{ paddingLeft: "1rem" }}
-      >
-        {label}
-      </h3>
-    )}
-    <ul className="list-none m-0 p-0">
-      {items.map((item) => (
-        <li key={item.title}>
-          {item.url?.startsWith("/") || item.url?.startsWith("#") ? (
-            <Link
-              href={item.url}
-              className="block w-full text-left rounded-[25px] px-4 py-2 transition-colors duration-300 font-rubik text-lg text-gray-800 hover:bg-gray-200"
-            >
-              {item.title}
-            </Link>
-          ) : (
-            <button
-              onClick={() => handleItemClick(item)}
-              className="block w-full text-left rounded-[25px] px-4 py-2 transition-colors duration-300 font-rubik text-lg text-gray-800 hover:bg-gray-200"
-            >
-              {item.title}
-            </button>
-          )}
-        </li>
-      ))}
-    </ul>
-  </div>
-);
+    <div className="mt-6">
+      {label && (
+        <h3
+          className="text-lg font-normal uppercase tracking-wide text-gray-700 mb-3 border-b border-gray-300 pb-1 font-rubik"
+          style={{ paddingLeft: "1rem" }}
+        >
+          {label}
+        </h3>
+      )}
+      <ul className="list-none m-0 p-0">
+        {items.map((item) => (
+          <li key={item.title}>
+            {item.url?.startsWith("/") || item.url?.startsWith("#") ? (
+              <Link
+                href={item.url}
+                className="block w-full text-left rounded-[25px] px-4 py-2 transition-colors duration-300 font-rubik text-lg text-gray-800 hover:bg-gray-200"
+              >
+                {item.title}
+              </Link>
+            ) : (
+              <button
+                onClick={() => handleItemClick(item)}
+                className="block w-full text-left rounded-[25px] px-4 py-2 transition-colors duration-300 font-rubik text-lg text-gray-800 hover:bg-gray-200"
+              >
+                {item.title}
+              </button>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 
   return (
     <>
-      <aside
-        className={`fixed top-10 right-8 h-full w-64 z-50 transition-all duration-700 ease-in-out 
-          p-6 font-rubik
-          ${showSidebar ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}
-      >
-        {/* Uncomment if you want main nav */}
-        {/* {renderSection(null, navigationData.main)} */}
-        {renderSection("Web Interface", navigationData.webInterface, true)}
-        {renderSection("Contact", navigationData.contact, true)}
-      </aside>
+      {isAllowedWidth && (
+        <aside
+          className={`fixed top-10 right-8 h-full w-64 z-50 transition-all duration-700 ease-in-out 
+            p-6 font-rubik
+            ${showSidebar ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}
+        >
+          {renderSection("Experience", navigationData.Exprience)}
+          {renderSection("Contact", navigationData.contact)}
+        </aside>
+      )}
 
       {showCvModal && (
         <div
@@ -111,9 +121,7 @@ export default function ScrollSidebar() {
             )}
             <iframe
               src="/image/7.15.2025.pdf"
-              className={`w-full h-full rounded-lg transition-opacity duration-500 ${
-                isLoading ? "opacity-0" : "opacity-100"
-              }`}
+              className={`w-full h-full rounded-lg transition-opacity duration-500 ${isLoading ? "opacity-0" : "opacity-100"}`}
               title="Marco's CV"
               style={{ border: "none", background: "transparent", pointerEvents: "auto", cursor: "default" }}
               onClick={(e) => e.stopPropagation()}

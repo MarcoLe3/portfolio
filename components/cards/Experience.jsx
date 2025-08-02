@@ -25,7 +25,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen flex font-light">
+    <div className="w-full  flex font-light">
       {/* Left Section (Text) */}
       <div className="bg-white flex items-start justify-start p-20 w-full">
         <div className="flex flex-col w-full">
@@ -60,6 +60,17 @@ const Experience = () => {
               />
             </div>
             <h1 className="text-[50px] mb-10 font-medium">Experience</h1>
+            <ExperienceDescription
+              company="Cal Poly Digital Transformation Hub, AWS"
+              role="AI Student"
+              endDate="'25"
+              description="Making AI accessible to all"
+              gradientStart="#1A4D2E"
+              gradientMid="#14532D"
+              gradientEnd="#212529"
+              image="/image/AIcamp.png"
+              link="/Contact_Page"
+            />
             <ExperienceDescription
               company="Eazifunds"
               role="Frontend Developer Intern"
