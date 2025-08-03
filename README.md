@@ -40,8 +40,10 @@ cd your-repo-name
 npm install
 
 npm run dev
+```
 
-Features
+# Features
+
 Responsive layout
 
 Custom navigation buttons
@@ -49,3 +51,14 @@ Custom navigation buttons
 Portfolio and contact sections
 
 Easily extendable sections (Experience, Projects, etc.)
+
+# Credit
+
+https://www.canva.com/templates/EAGXZiik1q4-white-and-red-illustrative-data-analysis-presentation/
+
+https://www.ccsf.edu/
+
+https://dxhub.calpoly.edu/
+
+https://www.trusteai.com/
+
