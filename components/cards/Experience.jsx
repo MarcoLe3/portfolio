@@ -89,7 +89,7 @@ const Experience = () => {
               ref={scrollRef}
               className="flex overflow-x-auto no-scrollbar gap-6 md:gap-8 items-stretch scroll-smooth pr-4 w-full max-w-full md:max-w-[1140px]"
             >
-              <ProjectDescription
+              {/* <ProjectDescription
                 title="AI Auditor"
                 tagline="AI Assistant"
                 imageUrl="/image/cac.png"
@@ -98,13 +98,13 @@ const Experience = () => {
               <ProjectDescription
                 title="AI Chatbot"
                 tagline="AI Assistant"
-                imageUrl="/image/cac.png"
+                imageUrl="/image/ai.png"
                 link="/CacheManager"
-              />
+              /> */}
               <ProjectDescription
                 title="Portfolio"
                 tagline="Showcase"
-                imageUrl="/image/port.png"
+                imageUrl="/image/portf.png"
                 link="/Portfolio"
               />
               <ProjectDescription
