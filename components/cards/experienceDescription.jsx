@@ -19,9 +19,11 @@ function ExperienceDescription({
           className="
             relative
             w-[90vw] h-[50vh]
-            sm:w-[90vw] sm:h-[55vh]
-            md:w-[60vw] md:h-[60vh]
+            sm:w-[90vw] sm:h-[40vh]
+            md:w-[60vw] md:h-[40vh]
             lg:w-[60vw] lg:h-[60vh]
+            w-[90vw] sm:w-[90vw] md:w-[60vw] lg:w-[60vw]
+            aspect-[3/2] max-h-[600px] sm:max-h-[650px] md:max-h-[700px] lg:max-h-[750px]
             rounded-[16px]
             border-[10px] border-[#000000]
             shadow-2xl
@@ -32,7 +34,7 @@ function ExperienceDescription({
             outlineOffset: '-16px',
             borderRadius: '16px',
           }}
-        >
+>
           {/* Background layers */}
           <div className="absolute inset-0 bg-[#212529] transition-opacity duration-[1200ms] ease-in-out z-0 pointer-events-none"></div>
 
@@ -67,13 +69,14 @@ function ExperienceDescription({
             className="
               absolute left-1/2
               w-[60vw] sm:w-[70vw] md:w-[50vw]
-              h-[25vh] sm:h-[30vh] md:h-[40vh]
+              h-[30vh] sm:h-[20vh] md:h-[40vh]
+              w-[70%] max-w-[500px] h-auto
               z-6 transform -translate-x-1/2
               bottom-[-6%] sm:bottom-[-5%]
               object-contain
               transition-all duration-500 ease-in-out
               group-hover:bottom-[-2%] group-hover:scale-102
-            "
+          "
           />
         </div>
       </div>
