@@ -57,6 +57,7 @@ const Experience = () => {
                 title="Cache Manager"
                 tagline="Data Management"
                 imageUrl="/image/cac.png" 
+                link="/CacheManager"
               />
             </div>
             <h1 className="text-[50px] mb-10 font-medium">Experience</h1>

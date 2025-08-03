@@ -24,7 +24,7 @@ export default function ScrollSidebar() {
 
   useEffect(() => {
     const checkWidth = () => {
-      setIsAllowedWidth(window.innerWidth >= 1400);
+      setIsAllowedWidth(window.innerWidth >= 1500);
     };
 
     checkWidth();

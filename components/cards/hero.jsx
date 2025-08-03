@@ -2,30 +2,23 @@ import React from 'react';
 
 function Hero() {
   return (
-    <div className="w-full min-h-[60vh] flex flex-col items-center justify-center text-[#0D1B2A] animate-image-reveal px-4">
-      {/* Name */}
-      <h1 className="text-[62px] sm:text-[60px] md:text-[90px] lg:text-[100px] leading-none opacity-0 animate-fade-in font-medium text-center">
-        MARCO LEE
-      </h1>
+    <div className="w-full min-h-screen flex items-center justify-center px-4 text-[#0D1B2A] animate-image-reveal">
+      <div className="flex flex-col items-center text-center max-w-[90vw] sm:max-w-[80vw] md:max-w-[900px]">
+        {/* Name */}
+        <h1 className="text-[10vw] sm:text-[8vw] md:text-[6vw] lg:text-[5vw] leading-none opacity-0 animate-fade-in font-medium">
+          MARCO LEE
+        </h1>
 
-      {/* Tagline */}
-      <p className="text-[20px] sm:text-[19px] md:text-[29px] lg:text-[32px] leading-none -mt-1 mb-10 opacity-0 animate-fade-in-delay font-medium text-center">
-        FRONTEND DEVELOPER PORTFOLIO
-      </p>
+        {/* Tagline */}
+        <p className="text-[4.5vw] sm:text-[3.5vw] md:text-[2.5vw] lg:text-[2vw] leading-none -mt-1 mb-6 opacity-0 animate-fade-in-delay font-medium">
+          FRONTEND DEVELOPER PORTFOLIO
+        </p>
 
-      {/* Description */}
-      <p className="text-[20px] sm:text-[22px] md:text-[26px] lg:text-[28px] xl:text-[30px] leading-snug -mt-2 mb-16 opacity-0 animate-fade-in-delay font-medium text-center max-w-[90vw] sm:max-w-[80vw] md:max-w-[900px]">
-        Based in San Francisco. Driven by a passion for building refined, intuitive UI/UX experiences.
-      </p>
-
-      {/* Downward Arrow (Optional) */}
-      {/* <div className="mt-6 opacity-0 animate-fade-in-delay-long transform rotate-90">
-        <img
-          src="/image/down.png"
-          alt="Down Arrow"
-          className="w-auto h-auto cursor-pointer transition-transform duration-500 hover:translate-y-4"
-        />
-      </div> */}
+        {/* Description */}
+        <p className="text-[4vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.5vw] leading-snug -mt-2 opacity-0 animate-fade-in-delay font-medium">
+          Based in San Francisco. Driven by a passion for building refined, intuitive UI/UX experiences.
+        </p>
+      </div>
     </div>
   );
 }
