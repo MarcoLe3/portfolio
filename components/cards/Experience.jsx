@@ -25,42 +25,38 @@ const Experience = () => {
   }, []);
 
   return (
-    <div className="w-full  flex font-light">
-      {/* Left Section (Text) */}
-      <div className="bg-white flex items-start justify-start p-20 w-full">
-        <div className="flex flex-col w-full">
-          {/* <h1
-            ref={ref}
-            className={`text-[60px] leading-none opacity-0 font-cormorant transition-opacity duration-700 ease-in-out ${
-              isVisible ? 'animate-fade-in-fast opacity-100' : ''
-            } text-[#0D1B2A]`}
-          >
-            My works. <span className="text-[#6c757d]">Designed for impact</span>
-          </h1> */}
+    <div className="w-full flex flex-col items-center bg-white font-light px-4 sm:px-6 md:px-12 lg:px-20 py-12">
+      <div className="w-full max-w-[1440px] flex flex-col">
+        <div
+          ref={ref}
+          className={`w-full transition-opacity duration-1000 ease-out ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+          }`}
+        >
+          {/* PROJECTS SECTION */}
+          <h1 className="text-[36px] sm:text-[42px] md:text-[50px] font-medium mb-10 text-left">
+            Projects
+          </h1>
+          <div className="flex flex-row md:flex-row gap-6 md:gap-8 items-center md:items-stretch mb-16">
+            <ProjectDescription
+              title="Portfolio"
+              tagline="Showcase"
+              imageUrl="/image/port.png"
+              link="/Portfolio"
+            />
+            <ProjectDescription
+              title="Cache Manager"
+              tagline="Data Management"
+              imageUrl="/image/cac.png"
+              link="/CacheManager"
+            />
+          </div>
 
-          {/* Centered and moved-down ExperienceDescription */}
-          <div
-            ref={ref}
-            className={`flex flex-col justify-center mx-auto transition-opacity duration-1000 ease-out ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-            }`}
-          >
-            <h1 className="text-[50px] mb-10 font-medium">Projects</h1>
-            <div className='flex gap-[1.5rem]'>
-              <ProjectDescription 
-                title="Portfolio"
-                tagline="Showcase"
-                imageUrl="/image/port.png" 
-                link="/Portfolio"
-              />
-              <ProjectDescription 
-                title="Cache Manager"
-                tagline="Data Management"
-                imageUrl="/image/cac.png" 
-                link="/CacheManager"
-              />
-            </div>
-            <h1 className="text-[50px] mb-10 font-medium">Experience</h1>
+          {/* EXPERIENCE SECTION */}
+          <h1 className="text-[36px] sm:text-[42px] md:text-[50px] font-medium mb-10 text-left">
+            Experience
+          </h1>
+          <div className="flex flex-col gap-6 sm:gap-6 md:gap-8">
             <ExperienceDescription
               company="Cal Poly Digital Transformation Hub, AWS"
               role="AI Student"
@@ -91,7 +87,7 @@ const Experience = () => {
               gradientStart="#6B5FA5"
               gradientMid="#5e548e"
               gradientEnd="#212529"
-              image={"/image/p.png"}
+              image="/image/p.png"
               link="/Contact_Page"
             />
             <ExperienceDescription
@@ -102,7 +98,7 @@ const Experience = () => {
               gradientStart="#e5383b"
               gradientMid="#660708"
               gradientEnd="#212529"
-              image={"/image/sf.png"}
+              image="/image/sf.png"
               link="/Contact_Page"
             />
             <ExperienceDescription
@@ -113,27 +109,14 @@ const Experience = () => {
               gradientStart="#c1121f"
               gradientMid="#d62828"
               gradientEnd="#212529"
-              image={"/image/s.png"}
+              image="/image/s.png"
               link="/Contact_Page"
             />
           </div>
-
         </div>
       </div>
-
-      {/* Right Section (Optional Image or Media) */}
-      {/* 
-      <div
-        className="w-1/2 bg-cover bg-center animate-image-reveal"
-        style={{ backgroundImage: `url('/image/image.png')` }}
-      ></div> 
-      */}
     </div>
   );
 };
 
 export default Experience;
-
-
-
-

@@ -67,7 +67,7 @@ function ExperienceDescription({
             className="
               absolute left-1/2
               w-[60vw] sm:w-[70vw] md:w-[50vw]
-              h-[30vh] sm:h-[30vh] md:h-[40vh]
+              h-[25vh] sm:h-[30vh] md:h-[40vh]
               z-6 transform -translate-x-1/2
               bottom-[-6%] sm:bottom-[-5%]
               object-contain
