@@ -70,7 +70,7 @@ function ExperienceDescription({
               absolute left-1/2
               w-[60vw] sm:w-[70vw] md:w-[50vw]
               h-[30vh] sm:h-[20vh] md:h-[40vh]
-              w-[70%] max-w-[500px] h-auto
+              w-[70%] max-w-[900px] h-auto
               z-6 transform -translate-x-1/2
               bottom-[-6%] sm:bottom-[-5%]
               object-contain
