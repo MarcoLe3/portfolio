@@ -18,7 +18,7 @@ const Contact_Page = () => {
           className="
             w-full max-w-[800px]
             flex flex-col items-center sm:flex-row sm:items-start
-            sm:justify-start
+            sm:justify-center
             gap-6 sm:gap-16
           "
         >

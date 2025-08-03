@@ -15,7 +15,7 @@ function Hero() {
         </p>
 
         {/* Description */}
-        <p className="text-[4vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.5vw] leading-snug -mt-2 opacity-0 animate-fade-in-delay font-medium">
+        <p className="text-[4vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.5vw] leading-snug -mt-2 text-gray-500 opacity-0 animate-fade-in-delay font-medium">
           Based in San Francisco. Driven by a passion for building refined, intuitive UI/UX experiences.
         </p>
       </div>

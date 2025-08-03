@@ -15,6 +15,12 @@ const navigationData = {
     { title: "LinkedIn", url: "https://www.linkedin.com/in/marco-lee-1461a0254/" },
     { title: "Read.CV", action: "showCv" },
   ],
+  credits: [
+    {
+      title: "Images Used",
+      url: null,
+    },
+  ],
 };
 
 export default function ScrollSidebar() {
