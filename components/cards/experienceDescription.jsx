@@ -19,9 +19,9 @@ function ExperienceDescription({
           className="
             relative
             w-[90vw] h-[50vh]
-            sm:w-[90vw] sm:h-[40vh]
-            md:w-[60vw] md:h-[40vh]
-            lg:w-[60vw] lg:h-[60vh]
+            sm:w-[70vw] sm:h-[40vh]
+            md:w-[80vw] md:h-[40vh]
+            lg:w-[80vw] lg:h-[50vh]
             w-[90vw] sm:w-[90vw] md:w-[60vw] lg:w-[60vw]
             aspect-[3/2] max-h-[600px] sm:max-h-[650px] md:max-h-[700px] lg:max-h-[750px]
             rounded-[16px]
@@ -69,7 +69,8 @@ function ExperienceDescription({
             className="
               absolute left-1/2
               w-[60vw] sm:w-[70vw] md:w-[50vw]
-              h-[30vh] sm:h-[20vh] md:h-[40vh]
+              h-[30vh] sm:h-[20vh] md:h-[20vh]
+              lg:w-[60vw] lg:h-[30vh]
               w-[70%] max-w-[900px] h-auto
               z-6 transform -translate-x-1/2
               bottom-[-6%] sm:bottom-[-5%]

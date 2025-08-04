@@ -37,7 +37,7 @@ function Resume() {
               </div>
             )}
             <iframe
-              src="/image/7.15.2025.pdf"
+              src="/image/8.2.2025.pdf"
               className={`w-full h-full rounded-lg transition-opacity duration-500 ${
                 isLoading ? "opacity-0" : "opacity-100"
               }`}

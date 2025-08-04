@@ -10,7 +10,7 @@ function Hero() {
         </h1>
 
         {/* Tagline */}
-        <p className="text-[4.5vw] sm:text-[3.5vw] md:text-[2.5vw] lg:text-[2vw] leading-none -mt-1 mb-6 opacity-0 animate-fade-in-delay font-medium">
+        <p className="text-[4.5vw] sm:text-[3.5vw] md:text-[2.5vw] lg:text-[1.6vw] leading-none -mt-1 mb-6 opacity-0 animate-fade-in-delay font-medium">
           FRONTEND DEVELOPER PORTFOLIO
         </p>
 

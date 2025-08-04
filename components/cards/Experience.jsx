@@ -92,13 +92,13 @@ const Experience = () => {
               {/* <ProjectDescription
                 title="AI Auditor"
                 tagline="AI Assistant"
-                imageUrl="/image/cac.png"
+                imageUrl="/image/"
                 link="/CacheManager"
               />
               <ProjectDescription
                 title="AI Chatbot"
                 tagline="AI Assistant"
-                imageUrl="/image/ai.png"
+                imageUrl="/image/.png"
                 link="/CacheManager"
               /> */}
               <ProjectDescription
