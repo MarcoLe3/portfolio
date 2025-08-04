@@ -6,7 +6,7 @@ function Hero() {
       <div className="flex flex-col items-center text-center max-w-[90vw] sm:max-w-[80vw] md:max-w-[900px]">
         {/* Name */}
         <h1 className="text-[10vw] sm:text-[8vw] md:text-[6vw] lg:text-[5vw] leading-none opacity-0 animate-fade-in font-medium">
-          MARCO LEE
+          MARCO LEEwqewq
         </h1>
 
         {/* Tagline */}
