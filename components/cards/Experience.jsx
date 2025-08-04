@@ -55,7 +55,7 @@ const Experience = () => {
 
   return (
     <div className="w-full flex flex-col items-center bg-gray-100 font-light px-4 sm:px-6 md:px-12 lg:px-20 py-12">
-      <div className="w-full max-w-[1440px] flex flex-col" style={{ marginLeft: '15vw' }}>
+      <div className="w-full max-w-[1440px] flex flex-col ml-0 md:ml-[10vw] md:ml-[9vw]">
         <div
           ref={ref}
           className={`w-full transition-opacity duration-1000 ease-out ${
@@ -137,7 +137,7 @@ const Experience = () => {
           <h1 className="text-[36px] sm:text-[42px] md:text-[50px] font-medium mb-10 text-left">
             Experience
           </h1>
-          <div className="flex flex-col gap-6 sm:gap-6 md:gap-8">
+          <div className="flex flex-col gap-6 sm:gap-4 md:gap-2">
             <ExperienceDescription
               company="Cal Poly Digital Transformation Hub, AWS"
               role="AI Student"
