@@ -21,7 +21,7 @@ function ExperienceDescription({
             w-[90vw] h-[50vh]
             sm:w-[70vw] sm:h-[40vh]
             md:w-[80vw] md:h-[40vh]
-            lg:w-[50vw] lg:h-[50vh]
+            lg:w-[45vw] lg:h-[50vh]
             w-[90vw] sm:w-[90vw] md:w-[60vw] lg:w-[60vw]
             aspect-[3/2] max-h-[600px] sm:max-h-[650px] md:max-h-[700px] lg:max-h-[750px]
             rounded-[16px]
