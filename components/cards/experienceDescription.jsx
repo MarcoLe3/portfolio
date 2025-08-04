@@ -68,9 +68,9 @@ function ExperienceDescription({
             alt="iPad Design"
             className="
               absolute left-1/2
-              w-[60vw] sm:w-[70vw] md:w-[50vw]
+              w-[75vw] sm:w-[70vw] md:w-[50vw]
               h-[30vh] sm:h-[20vh] md:h-[20vh]
-              lg:w-[60vw] lg:h-[30vh]
+              lg:w-[45vw] lg:h-[45vh]
               w-[70%] max-w-[900px] h-auto
               z-6 transform -translate-x-1/2
               bottom-[-6%] sm:bottom-[-5%]
