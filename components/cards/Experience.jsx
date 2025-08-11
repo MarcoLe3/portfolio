@@ -63,7 +63,7 @@ const Experience = () => {
           }`}
         >
           {/* PROJECTS SECTION */}
-          <h1 className="text-[36px] sm:text-[42px] md:text-[50px] font-medium mb-10 text-left">
+          <h1 className="text-[36px] sm:text-[42px] md:text-[50px] font-medium mb-12 text-left">
             Projects
           </h1>
 
@@ -88,6 +88,7 @@ const Experience = () => {
             <div
               ref={scrollRef}
               className="flex overflow-x-auto no-scrollbar gap-6 md:gap-8 items-stretch scroll-smooth pr-4 w-full max-w-full md:max-w-[1140px]"
+              style={{ paddingTop: '20px', paddingBottom: '20px' }}
             >
               {/* <ProjectDescription
                 title="AI Auditor"
