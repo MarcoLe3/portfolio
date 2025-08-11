@@ -45,7 +45,7 @@ function ExperienceDescription({
             <img
               src="/image/arrow.png"
               alt="Arrow"
-              className="absolute top-4 right-8 w-8 h-8 transform transition-all duration-300 ease-in-out group-hover:translate-x-7 z-50"
+              className="absolute top-4 right-12 w-8 h-8 transform transition-all duration-300 ease-in-out group-hover:translate-x-7 z-50"
             />
 
             <h2 className="text-2xl font-medium mb-2 text-white">{company}</h2>
