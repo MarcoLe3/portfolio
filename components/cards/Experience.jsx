@@ -147,7 +147,6 @@ const Experience = () => {
               gradientStart="#1A4D2E"
               gradientMid="#14532D"
               gradientEnd="#212529"
-              image="/image/AIcamp.png"
               link="/Contact_Page"
             />
             <ExperienceDescription
@@ -158,7 +157,6 @@ const Experience = () => {
               gradientStart="#274c77"
               gradientMid="#001d3d"
               gradientEnd="#212529"
-              
               link="/Contact_Page"
             />
             <ExperienceDescription
@@ -166,10 +164,9 @@ const Experience = () => {
               role="Frontend Developer Intern"
               endDate="'24"
               description="Socalizing with rewards"
-              gradientStart="#6B5FA5"
-              gradientMid="#5e548e"
+              gradientStart="#23223A"
+              gradientMid="#23223A"
               gradientEnd="#212529"
-              image="/image/popper.png"
               link="/Contact_Page"
             />
             <ExperienceDescription
@@ -180,7 +177,6 @@ const Experience = () => {
               gradientStart="#e5383b"
               gradientMid="#660708"
               gradientEnd="#212529"
-              image="/image/sf.png"
               link="/Contact_Page"
             />
             <ExperienceDescription
@@ -191,7 +187,6 @@ const Experience = () => {
               gradientStart="#c1121f"
               gradientMid="#d62828"
               gradientEnd="#212529"
-              image="/image/s.png"
               link="/Contact_Page"
             />
           </div>
