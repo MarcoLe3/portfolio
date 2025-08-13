@@ -127,7 +127,7 @@ export default function ScrollSidebar() {
               </div>
             )}
             <iframe
-              src="/image/8.2.2025.pdf"
+              src="/image/8.11.2025.pdf"
               className={`w-full h-full rounded-lg transition-opacity duration-500 ${isLoading ? "opacity-0" : "opacity-100"}`}
               title="Marco's CV"
               style={{ border: "none", background: "transparent", pointerEvents: "auto", cursor: "default" }}

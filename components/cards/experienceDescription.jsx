@@ -58,7 +58,7 @@ function ExperienceDescription({
           </div>
 
           {/* Floating image */}
-          <img
+          {/* <img
             src={image}
             alt="iPad Design"
             className="
@@ -68,9 +68,9 @@ function ExperienceDescription({
               bottom-[-100px]
               object-contain
               transition-all duration-500 ease-in-out
-              group-hover:bottom-[-86px] group-hover:scale-105
+              group-hover:bottom-[-89px] group-hover:scale-105
             "
-          />
+          /> */}
         </div>
       </div>
     </Link>

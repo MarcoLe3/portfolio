@@ -105,15 +105,15 @@ const Experience = () => {
               <ProjectDescription
                 title="Portfolio"
                 tagline="Showcase"
-                imageUrl="/image/portf.png"
+                imageUrl="/image/portfolio.png"
                 link="/Portfolio"
               />
-              <ProjectDescription
+              {/* <ProjectDescription
                 title="Cache Manager"
                 tagline="Data Management"
                 imageUrl="/image/data.png"
                 link="/CacheManager"
-              />
+              /> */}
             </div>
 
             {/* Right Arrow Button */}
@@ -158,7 +158,7 @@ const Experience = () => {
               gradientStart="#274c77"
               gradientMid="#001d3d"
               gradientEnd="#212529"
-              image="/image/e.png"
+              
               link="/Contact_Page"
             />
             <ExperienceDescription
@@ -169,7 +169,7 @@ const Experience = () => {
               gradientStart="#6B5FA5"
               gradientMid="#5e548e"
               gradientEnd="#212529"
-              image="/image/p.png"
+              image="/image/popper.png"
               link="/Contact_Page"
             />
             <ExperienceDescription
