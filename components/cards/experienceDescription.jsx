@@ -13,12 +13,13 @@ function ExperienceDescription({
 }) {
   return (
     <Link href={link}>
-      <div className="rounded-2xl p-2 mb-14 relative group overflow-visible cursor-pointer hover:scale-[1.01] transition-transform duration-300 ease-in-out">
+      <div className="rounded-2xl p-2 mb-4 relative group overflow-visible cursor-pointer hover:scale-[1.01] transition-transform duration-300 ease-in-out">
         {/* Outer container with black border and white outline */}
         <div
           className="
             relative
-            w-[1000px] h-[650px]
+            w-full sm:w-[600px] md:w-[800px] lg:w-[1000px] 
+            h-[400px] sm:h-[500px] md:h-[600px] lg:h-[650px]
             rounded-[16px]
             border-[10px] border-[#000000]
             shadow-2xl
@@ -30,13 +31,17 @@ function ExperienceDescription({
             borderRadius: '16px',
           }}
         >
+
           {/* Background layers */}
           <div className="absolute inset-0 bg-[#212529] transition-opacity duration-[1200ms] ease-in-out z-0 pointer-events-none"></div>
 
           <div
             className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-[1200ms] ease-in-out z-0 pointer-events-none"
             style={{
-              background: `linear-gradient(${gradientStart} 0%, ${gradientMid} 50%, ${gradientEnd} 100%)`,
+              background: `
+                radial-gradient(ellipse at top center, rgba(255,255,255,0.2) 2%, transparent 80%),
+                linear-gradient(${gradientStart} 0%, ${gradientMid} 50%, ${gradientEnd} 100%)
+              `,
             }}
           ></div>
 

@@ -7,9 +7,22 @@ const Contact_Page = () => {
   return (
     <div>
       <Back />
-      <div className="w-full min-h-[60vh] font-medium flex flex-col items-center justify-center text-[#0D1B2A] gap-10 px-4 sm:px-6 md:px-12">
+      <div
+        className="
+          w-full min-h-[60vh] font-medium
+          flex flex-col items-center justify-center
+          text-[#0D1B2A]
+          gap-8 sm:gap-10 lg:gap-12
+          px-4 sm:px-6 md:px-12
+        "
+      >
         {/* Name */}
-        <h1 className="text-[40px] sm:text-[60px] md:text-[90px] text-center leading-tight">
+        <h1
+          className="
+            text-[28px] sm:text-[40px] md:text-[60px] lg:text-[90px]
+            text-center leading-tight
+          "
+        >
           Contact Marco Lee
         </h1>
 
@@ -17,9 +30,10 @@ const Contact_Page = () => {
         <div
           className="
             w-full max-w-[800px]
-            flex flex-col items-center sm:flex-row sm:items-start
-            sm:justify-center
-            gap-6 sm:gap-16
+            flex flex-wrap items-center
+            justify-start sm:justify-center
+            gap-16 sm:gap-8 md:gap-12
+            pl-20 sm:pl-0
           "
         >
           <Contact />

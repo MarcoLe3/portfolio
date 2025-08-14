@@ -82,14 +82,15 @@ export default function ScrollSidebar() {
             {item.url?.startsWith("/") || item.url?.startsWith("#") ? (
               <Link
                 href={item.url}
-                className="block w-full text-left rounded-[25px] px-4 py-2 transition-colors duration-300 font-rubik text-lg text-gray-800 hover:bg-gray-200"
+                className="block w-full text-left rounded-[25px] px-4 py-2 mb-2 transition-all duration-300 font-rubik text-lg text-gray-800 
+                  hover:bg-white/20 hover:backdrop-blur-md hover:shadow-[0_4px_20px_rgba(0,0,0,0.15)]"
               >
                 {item.title}
               </Link>
             ) : (
               <button
                 onClick={() => handleItemClick(item)}
-                className="block w-full text-left rounded-[25px] px-4 py-2 transition-colors duration-300 font-rubik text-lg text-gray-800 hover:bg-gray-200"
+                className="block w-full text-left rounded-[25px] px-4 py-2 mb-2 transition-colors duration-300 font-rubik text-lg text-gray-800 hover:bg-gray-100 hover:shadow-lg"
               >
                 {item.title}
               </button>

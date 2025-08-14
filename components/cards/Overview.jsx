@@ -2,7 +2,7 @@ import React from 'react'
 
 function Overview() {
   return (
-    <div className='bg-gray-100 w-full flex flex-col items-center p-20'>
+    <div className=' w-full flex flex-col items-center p-20'>
       <h1 className='text-[40px] mb-4 font-semi-bold text-left w-[800px]'>Overview</h1>
       <p className='w-[800px] text-[20px] leading-relaxed text-left'>
         I wanted to create a project that highlights my skills while keeping the
