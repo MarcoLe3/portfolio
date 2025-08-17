@@ -29,11 +29,11 @@ const Contact_Page = () => {
         {/* Buttons container */}
         <div
           className="
-            w-[400px] mx-auto
-            flex flex-wrap
-            gap-6
-            sm:gap-8 md:gap-12
-            px-4
+            w-full max-w-[300px] mx-auto
+            flex flex-row sm:flex-nowrap flex-wrap
+            justify-center
+            gap-6 sm:gap-8 md:gap-12
+            px-4 py-6
           "
         >
           <Contact />
