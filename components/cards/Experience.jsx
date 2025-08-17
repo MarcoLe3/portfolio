@@ -71,7 +71,7 @@ const Experience = () => {
             {/* Left Arrow Button */}
             <button
               onClick={() => scrollProjects('left')}
-              className={`absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-300/90 hover:bg-gray-400 transition-all duration-500 ease-in-out rounded-full shadow-md flex items-center justify-center ${
+              className={`hidden sm:flex absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-300/90 hover:bg-gray-400 transition-all duration-500 ease-in-out rounded-full shadow-md flex items-center justify-center ${
                 canScrollLeft ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
               }`}
               style={{ width: 80, height: 80, left: -100 }}
@@ -119,7 +119,7 @@ const Experience = () => {
             {/* Right Arrow Button */}
             <button
               onClick={() => scrollProjects('right')}
-              className={`absolute top-1/2 transform -translate-y-1/2 z-10 bg-gray-300/90 hover:bg-gray-400 transition-all duration-500 ease-in-out rounded-full shadow-md flex items-center justify-center ${
+              className={`hidden sm:flex absolute top-1/2 transform -translate-y-1/2 z-10 bg-gray-300/90 hover:bg-gray-400 transition-all duration-500 ease-in-out rounded-full shadow-md flex items-center justify-center ${
                 canScrollRight ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
               }`}
               style={{ width: 80, height: 80, right: 200 }}

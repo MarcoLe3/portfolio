@@ -90,7 +90,7 @@ export default function ScrollSidebar() {
             ) : (
               <button
                 onClick={() => handleItemClick(item)}
-                className="block w-full text-left rounded-[25px] px-4 py-2 mb-2 transition-colors duration-300 font-rubik text-lg text-gray-800 hover:bg-gray-100 hover:shadow-lg"
+                className="block w-full text-left rounded-[25px] px-4 py-2 mb-2 transition-colors duration-300 font-rubik text-lg text-gray-800 hover:shadow-lg"
               >
                 {item.title}
               </button>
