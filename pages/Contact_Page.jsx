@@ -33,7 +33,7 @@ const Contact_Page = () => {
             flex flex-wrap items-center
             justify-start sm:justify-center
             gap-16 sm:gap-8 md:gap-12
-            pl-19 sm:pl-0
+            pl-16 sm:pl-0
           "
         >
           <Contact />
