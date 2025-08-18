@@ -2,7 +2,12 @@ import React from 'react';
 
 function Hero() {
   return (
-     <div className="w-full min-h-screen flex items-center justify-center px-4 text-[#0D1B2A] animate-image-reveal">
+     <div className="
+        w-full 
+        min-h-[70vh] sm:min-h-[80vh] md:min-h-screen 
+        flex items-center justify-center px-4 
+        text-[#0D1B2A] animate-image-reveal
+      ">
       <div className="flex flex-col items-center text-center max-w-[90vw] sm:max-w-[80vw] md:max-w-[900px]">
         {/* Name */}
         <h1 className="text-[10vw] sm:text-[8vw] md:text-[6vw] lg:text-[5vw] leading-none opacity-0 animate-fade-in font-medium">
