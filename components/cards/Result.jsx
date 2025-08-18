@@ -2,9 +2,11 @@ import React from 'react'
 
 function Result() {
   return (
-    <div className=' w-full flex flex-col items-center p-20'>
-      <h1 className='text-[40px] mb-4 font-semi-bold text-left w-[800px]'>Result</h1>
-      <p className='w-[800px] text-[20px] leading-relaxed text-left'>
+    <div className="w-full flex flex-col items-center p-6 sm:p-10 md:p-20">
+      <h1 className="text-[28px] sm:text-[32px] md:text-[40px] mb-4 font-semibold text-left w-full md:w-[800px]">
+        Result
+      </h1>
+      <p className="w-full md:w-[800px] text-[16px] sm:text-[18px] md:text-[20px] leading-relaxed text-left">
         The project resulted in a clean, easy-to-navigate portfolio that effectively
         showcases my technical skills, design sensibility, and attention to user
         experience. Visitors can quickly explore my projects, see my practical
