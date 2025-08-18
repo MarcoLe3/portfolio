@@ -142,16 +142,18 @@ const Experience = () => {
               gradientStart="#008932"
               gradientMid="#14532D"
               gradientEnd="#212529"
+              image="/image/aws.png"
               link="/Contact_Page"
             />
             <ExperienceDescription
-              company="Eazifunds"
-              role="Frontend Developer Intern"
+              company="eAI"
+              role="Frontend Developer Intern"s
               endDate="'25"
               description="Setting a future for all people"
               gradientStart="#274c77"
               gradientMid="#001d3d"
               gradientEnd="#212529"
+              image = "/image/eAI.png"
               link="/Contact_Page"
             />
             <ExperienceDescription
@@ -162,6 +164,7 @@ const Experience = () => {
               gradientStart="#23223A"
               gradientMid="#23223A"
               gradientEnd="#212529"
+              image = "/image/pop.png"
               link="/Contact_Page"
             />
             <ExperienceDescription
@@ -172,6 +175,7 @@ const Experience = () => {
               gradientStart="#e9152e"
               gradientMid="#660708"
               gradientEnd="#212529"
+              image = "/image/sf.png"
               link="/Contact_Page"
             />
             <ExperienceDescription
@@ -179,9 +183,10 @@ const Experience = () => {
               role="Computer Science Tutor Assistant"
               endDate="'24"
               description="Tutoring beginning students in CS"
-              gradientStart="#ff383b"
-              gradientMid="#d62828"
+              gradientStart="#c53235ff"
+              gradientMid="#c02626ff"
               gradientEnd="#212529"
+              image = "/image/ccsf.png"
               link="/Contact_Page"
             />
           </div>

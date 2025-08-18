@@ -62,20 +62,22 @@ function ExperienceDescription({
             </p>
           </div>
 
-          {/* Floating image (optional) */}
-          {/* <img
+          <img
             src={image}
             alt="iPad Design"
             className="
               absolute left-1/2
-              w-[700px] h-[550px]
+              w-[340px] h-[400px]       /* default mobile size */
+              sm:w-[500px] sm:h-[400px] /* small screens */
+              md:w-[650px] md:h-[500px] /* medium screens */
+              lg:w-[800px] lg:h-[700px] /* large screens - bigger on browser */
               z-6 transform -translate-x-1/2
-              bottom-[-100px]
+              bottom-[-100px] sm:bottom-[-120px]
               object-contain
               transition-all duration-500 ease-in-out
-              group-hover:bottom-[-89px] group-hover:scale-105
+              group-hover:scale-105 group-hover:bottom-[-110px]
             "
-          /> */}
+          />
         </div>
       </div>
     </Link>
