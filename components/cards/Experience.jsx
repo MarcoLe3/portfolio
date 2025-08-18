@@ -99,7 +99,6 @@ const Experience = () => {
                 imageUrl="/image/portfolio.png"
                 link="/Portfolio"
               />
-              
               {/* Example for future projects */}
               {/* <ProjectDescription
                 className="flex-shrink-0"
