@@ -39,13 +39,13 @@ const Experience = () => {
       if (!scrollRef.current) return;
       const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
       setCanScrollLeft(scrollLeft > 0);
-      setCanScrollRight(scrollLeft + clientWidth < scrollWidth - 1); // Use -1 to avoid rounding errors
+      setCanScrollRight(scrollLeft + clientWidth < scrollWidth - 1);
     };
 
     const el = scrollRef.current;
     if (el) {
       el.addEventListener('scroll', updateScrollButtons);
-      updateScrollButtons(); // Initial check
+      updateScrollButtons();
     }
 
     return () => {
@@ -55,7 +55,7 @@ const Experience = () => {
 
   return (
     <div className="w-full flex flex-col items-center bg-gray-100 font-light px-4 sm:px-6 md:px-12 lg:px-20 py-12">
-      <div className="w-full max-w-[1440px] flex flex-col ml-0 md:ml-[10vw] md:ml-[9vw]">
+      <div className="w-full max-w-[1440px] flex flex-col ml-0 md:ml-[9vw]">
         <div
           ref={ref}
           className={`w-full transition-opacity duration-1000 ease-out ${
@@ -63,7 +63,7 @@ const Experience = () => {
           }`}
         >
           {/* PROJECTS SECTION */}
-          <h1 className="text-[36px] sm:text-[42px] md:text-[50px] font-medium mb-12 text-left">
+          <h1 className="text-[32px] sm:text-[42px] md:text-[50px] font-medium mb-8 text-left">
             Projects
           </h1>
 
@@ -71,44 +71,38 @@ const Experience = () => {
             {/* Left Arrow Button */}
             <button
               onClick={() => scrollProjects('left')}
-              className={`hidden sm:flex absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-300/90 hover:bg-gray-400 transition-all duration-500 ease-in-out rounded-full shadow-md flex items-center justify-center ${
-                canScrollLeft ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
+              className={`hidden sm:flex absolute left-2 sm:-left-10 top-1/2 -translate-y-1/2 z-10 bg-gray-300/90 hover:bg-gray-400 transition-all duration-500 ease-in-out rounded-full shadow-md items-center justify-center ${
+                canScrollLeft
+                  ? 'opacity-100 scale-100'
+                  : 'opacity-0 scale-95 pointer-events-none'
               }`}
-              style={{ width: 80, height: 80, left: -100 }}
+              style={{ width: 60, height: 60 }}
             >
               <Image
                 src="/image/test3.png"
                 alt="Scroll Left"
-                width={100}
-                height={50}
+                width={40}
+                height={40}
               />
             </button>
 
             {/* Scrollable Projects */}
             <div
               ref={scrollRef}
-              className="flex overflow-x-auto no-scrollbar gap-6 md:gap-8 items-stretch scroll-smooth pr-4 w-full max-w-full md:max-w-[1140px]"
+              className="flex overflow-x-auto no-scrollbar gap-4 md:gap-6 items-stretch scroll-smooth w-full"
               style={{ paddingTop: '20px', paddingBottom: '20px' }}
             >
-              {/* <ProjectDescription
-                title="AI Auditor"
-                tagline="AI Assistant"
-                imageUrl="/image/"
-                link="/CacheManager"
-              />
               <ProjectDescription
-                title="AI Chatbot"
-                tagline="AI Assistant"
-                imageUrl="/image/.png"
-                link="/CacheManager"
-              /> */}
-              <ProjectDescription
+                className="flex-shrink-0"
                 title="Portfolio"
                 tagline="Showcase"
                 imageUrl="/image/portfolio.png"
                 link="/Portfolio"
               />
+              
+              {/* Example for future projects */}
               {/* <ProjectDescription
+                className="flex-shrink-0"
                 title="Cache Manager"
                 tagline="Data Management"
                 imageUrl="/image/data.png"
@@ -119,23 +113,25 @@ const Experience = () => {
             {/* Right Arrow Button */}
             <button
               onClick={() => scrollProjects('right')}
-              className={`hidden sm:flex absolute top-1/2 transform -translate-y-1/2 z-10 bg-gray-300/90 hover:bg-gray-400 transition-all duration-500 ease-in-out rounded-full shadow-md flex items-center justify-center ${
-                canScrollRight ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
+              className={`hidden sm:flex absolute right-2 sm:right-10 top-1/2 -translate-y-1/2 z-10 bg-gray-300/90 hover:bg-gray-400 transition-all duration-500 ease-in-out rounded-full shadow-md items-center justify-center ${
+                canScrollRight
+                  ? 'opacity-100 scale-100'
+                  : 'opacity-0 scale-95 pointer-events-none'
               }`}
-              style={{ width: 80, height: 80, right: 200 }}
+              style={{ width: 60, height: 60 }}
             >
               <Image
                 src="/image/test2.png"
                 alt="Scroll Right"
-                width={100}
-                height={50}
+                width={40}
+                height={40}
                 className="rounded-full"
               />
             </button>
           </div>
 
           {/* EXPERIENCE SECTION */}
-          <h1 className="text-[36px] sm:text-[42px] md:text-[50px] font-medium mb-10 text-left">
+          <h1 className="text-[32px] sm:text-[42px] md:text-[50px] font-medium mb-10 text-left">
             Experience
           </h1>
           <div className="flex flex-col gap-6 sm:gap-4 md:gap-2">
@@ -163,7 +159,7 @@ const Experience = () => {
               company="Popper"
               role="Frontend Developer Intern"
               endDate="'24"
-              description="Socalizing with rewards"
+              description="Socializing with rewards"
               gradientStart="#23223A"
               gradientMid="#23223A"
               gradientEnd="#212529"
