@@ -46,7 +46,7 @@ function ExperienceDescription({
           ></div>
 
           {/* Content */}
-          <div className="relative z-10 p-6 w-full h-full font-Rubik">
+          <div className="relative z-10 p-6 w-full h-full font-instrument">
             <img
               src="/image/arrow.png"
               alt="Arrow"

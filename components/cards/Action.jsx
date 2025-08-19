@@ -6,7 +6,7 @@ function Action() {
       <h1 className="text-[28px] sm:text-[32px] md:text-[40px] mb-4 font-semibold text-left w-full md:w-[800px]">
         Action
       </h1>
-      <p className="w-full md:w-[800px] text-[16px] sm:text-[18px] md:text-[20px] leading-relaxed text-left">
+      <p className="w-full md:w-[800px] text-[16px] sm:text-[18px] md:text-[20px] font-instrument leading-relaxed text-left">
         To build this project, I first researched modern UI and UX principles to
         ensure a clean, intuitive design. I sketched wireframes and created mockups
         using Figma, drawing inspiration from minimalist interfaces like Apple’s,

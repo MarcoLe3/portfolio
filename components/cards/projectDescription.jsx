@@ -9,7 +9,7 @@ function ProjectDescription({ title, tagline, imageUrl, link }) {
       flex flex-col justify-between overflow-hidden"
     >
       {/* Title and Tagline */}
-      <div className="space-y-3 mb-4">
+      <div className="space-y-3 mb-4 font-instrument">
         <h2 className="text-2xl font-medium text-black">{title}</h2>
         <p className="text-lg text-blue-600 font-medium">{tagline}</p>
       </div>

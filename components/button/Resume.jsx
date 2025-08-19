@@ -18,7 +18,7 @@ function Resume() {
 
   return (
     <>
-      <div className="flex flex-col justify-center items-center cursor-pointer" onClick={handleResumeClick}>
+      <div className="flex flex-col justify-center items-center cursor-pointer " onClick={handleResumeClick}>
         <img src="/image/file_text.png" alt="Resume Icon" className="w-10 h-10 mr-2" />
         <span className="text-[#0066CC] hover:underline text-2xl">Resume</span>
       </div>

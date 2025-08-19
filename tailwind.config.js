@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         rubik: ['Rubik', 'sans-serif'],
         cormorant: ['Cormorant', 'serif'],
+        instrument: ['Instrument Sans', 'sans-serif'],
       },
       
       keyframes: {
