@@ -14,7 +14,6 @@ function ExperienceDescription({
   return (
     <Link href={link}>
       <div className="rounded-2xl mb-4 relative overflow-visible cursor-pointer">
-        {/* Inner card gets the group hover */}
         <div
           className="
             relative group
@@ -32,7 +31,6 @@ function ExperienceDescription({
             borderRadius: '16px',
           }}
         >
-          {/* Background layers */}
           <div className="absolute inset-0 bg-[#212529] transition-opacity duration-[1200ms] ease-in-out z-0 pointer-events-none"></div>
 
           <div
@@ -45,7 +43,6 @@ function ExperienceDescription({
             }}
           ></div>
 
-          {/* Content */}
           <div className="relative z-10 p-6 w-full h-full font-instrument">
             <img
               src="/image/arrow.png"
