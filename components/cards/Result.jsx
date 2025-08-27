@@ -1,4 +1,5 @@
 import React from 'react'
+import Github from '../button/github'
 
 function Result() {
   return (
@@ -15,6 +16,10 @@ function Result() {
         portfolio demonstrates both my ability to build functional web applications
         and my understanding of modern design principles.
       </p>
+      <
+        Github 
+        url = "https://github.com/MarcoLe3/portfolio"
+      />
     </div>
   )
 }
