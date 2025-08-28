@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import ExperienceDescription from './experienceDescription';
-import ProjectDescription from './projectDescription';
+import ExperienceDescription from '../cards/experienceDescription';
+import ProjectDescription from '../cards/projectDescription';
 import Image from 'next/image';
 
 const Experience = () => {

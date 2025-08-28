@@ -2,8 +2,8 @@ import React from 'react'
 
 function Action() {
   return (
-    <div className="w-full flex flex-col items-center p-6 sm:p-10 md:p-20">
-      <h1 className="text-[28px] sm:text-[32px] md:text-[40px] mb-4 font-semibold text-left w-full md:w-[800px]">
+    <div className="w-full flex flex-col items-center p-6 sm:p-10 md:p-20 gap-4 md:gap-6">
+      <h1 className="text-[28px] sm:text-[32px] md:text-[40px] font-semibold text-left w-full md:w-[800px]">
         Action
       </h1>
       <p className="w-full md:w-[800px] text-[16px] sm:text-[18px] md:text-[20px] font-instrument leading-relaxed text-left">
