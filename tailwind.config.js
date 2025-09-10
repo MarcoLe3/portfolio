@@ -21,6 +21,7 @@ module.exports = {
           '100%': { opacity: '1', transform: 'scale(1)' },
         },
         
+        
       },
       animation: {
       'fade-in-fast': 'fade-in 1s ease-out forwards',

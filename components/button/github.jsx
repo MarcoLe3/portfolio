@@ -8,9 +8,9 @@ function GithubButton({ url }) {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full p-4 border-2 border-black rounded-xl"
+        className="w-[600px] p-4 border border-black hover:bg-black hover:text-white rounded-full"
       >
-        <span className="font-medium">GitHub</span>
+        <span className="">GitHub</span>
       </a>
     </div>
   );

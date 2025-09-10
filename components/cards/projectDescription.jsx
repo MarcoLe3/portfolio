@@ -1,17 +1,18 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-function ProjectDescription({ title, tagline, imageUrl, link }) {
+function ProjectDescription({ title, tagline, imageUrl, link, titleColor, taglineColor, bgColor }) {
   const CardContent = (
     <div
-      className="rounded-2xl p-6 cursor-pointer hover:scale-[1.03] transition-transform duration-300 ease-in-out bg-white shadow-[0_4px_20px_rgba(0,0,0,0.1)] 
-      w-[400px] h-[500px] 
-      flex flex-col justify-between overflow-hidden"
+      className={`p-6 cursor-pointer overflow-hidden
+      w-[49vw] h-[500px] 
+      flex flex-col justify-between`}
+      style={{ backgroundColor: bgColor }}
     >
       {/* Title and Tagline */}
-      <div className="space-y-3 mb-4 font-instrument">
-        <h2 className="text-2xl font-medium text-black">{title}</h2>
-        <p className="text-lg text-blue-600 font-medium">{tagline}</p>
+      <div className="space-y-3 mb-4 font-instrument text-center">
+        <h2 className="text-2xl font-medium" style={{ color: titleColor }}>{title}</h2>
+        <p className="text-lg font-medium" style={{ color: taglineColor }}>{tagline}</p>
       </div>
 
       {/* Image */}

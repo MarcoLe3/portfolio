@@ -1,14 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import ExperienceDescription from '../cards/experienceDescription';
-import ProjectDescription from '../cards/projectDescription';
-import Image from 'next/image';
+import ExperienceSlide from '../cards/experienceSlide';
 
 const Experience = () => {
   const ref = useRef(null);
-  const scrollRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,31 +24,6 @@ const Experience = () => {
     };
   }, []);
 
-  const scrollProjects = (direction) => {
-    if (!scrollRef.current) return;
-    const scrollAmount = direction === 'left' ? -300 : 300;
-    scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-  };
-
-  useEffect(() => {
-    const updateScrollButtons = () => {
-      if (!scrollRef.current) return;
-      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-      setCanScrollLeft(scrollLeft > 0);
-      setCanScrollRight(scrollLeft + clientWidth < scrollWidth - 1);
-    };
-
-    const el = scrollRef.current;
-    if (el) {
-      el.addEventListener('scroll', updateScrollButtons);
-      updateScrollButtons();
-    }
-
-    return () => {
-      if (el) el.removeEventListener('scroll', updateScrollButtons);
-    };
-  }, []);
-
   return (
     <div className="w-full flex flex-col items-center font-light">
       <div
@@ -62,68 +33,15 @@ const Experience = () => {
         }`}
       >
 
-        {/* PROJECTS SECTION */}
+        {/* EXPERIENCE SECTION */}
         <section className="w-full bg-gray-100 py-16">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
-            <h1 className="text-[32px] sm:text-[42px] md:text-[50px] font-medium mb-8 text-left">
-              Projects
-            </h1>
-
-            <div className="relative mb-16">
-              {/* Left Arrow */}
-              <button
-                onClick={() => scrollProjects('left')}
-                className={`hidden sm:flex absolute left-2 sm:-left-10 top-1/2 -translate-y-1/2 z-10 bg-gray-300/90 hover:bg-gray-400 transition-all duration-500 ease-in-out rounded-full shadow-md items-center justify-center ${
-                  canScrollLeft
-                    ? 'opacity-100 scale-100'
-                    : 'opacity-0 scale-95 pointer-events-none'
-                }`}
-                style={{ width: 60, height: 60 }}
-              >
-                <Image src="/image/test3.png" alt="Scroll Left" width={40} height={40} />
-              </button>
-
-              {/* Scrollable Projects */}
-              <div
-                ref={scrollRef}
-                className="flex overflow-x-auto no-scrollbar gap-4 md:gap-6 items-stretch scroll-smooth w-full"
-                style={{ paddingTop: '20px', paddingBottom: '20px' }}
-              >
-                <ProjectDescription
-                  className="flex-shrink-0"
-                  title="Portfolio"
-                  tagline="Showcase"
-                  imageUrl="/image/portfolio.png"
-                  link="/Portfolio"
-                />
-                {/* Add more ProjectDescription components here */}
-              </div>
-
-              {/* Right Arrow */}
-              <button
-                onClick={() => scrollProjects('right')}
-                className={`hidden sm:flex absolute right-2 sm:right-10 top-1/2 -translate-y-1/2 z-10 bg-gray-300/90 hover:bg-gray-400 transition-all duration-500 ease-in-out rounded-full shadow-md items-center justify-center ${
-                  canScrollRight
-                    ? 'opacity-100 scale-100'
-                    : 'opacity-0 scale-95 pointer-events-none'
-                }`}
-                style={{ width: 60, height: 60 }}
-              >
-                <Image src="/image/test2.png" alt="Scroll Right" width={40} height={40} className="rounded-full" />
-              </button>
-            </div>
-          </div>
-        </section>
-
-        {/* EXPERIENCE SECTION */}
-        <section className="w-full bg-white py-16">
-          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
-            <h1 className="text-[32px] sm:text-[42px] md:text-[50px] font-medium mb-10 text-left">
+            <h1 className="text-[32px] sm:text-[42px] md:text-[50px] font-medium mb-10 text-center">
               Experience
             </h1>
 
             <div className="flex flex-col gap-6 sm:gap-4 md:gap-2">
-              <ExperienceDescription
+              {/* <ExperienceDescription
                 company="Cal Poly Digital Transformation Hub, AWS"
                 role="AI Student"
                 endDate="'25"
@@ -177,6 +95,9 @@ const Experience = () => {
                 gradientEnd="#212529"
                 image="/image/ccsf.png"
                 link="/Contact_Page"
+              /> */}
+              <ExperienceSlide
+                image="/image/pop.png"              
               />
             </div>
           </div>

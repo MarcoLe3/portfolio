@@ -6,7 +6,7 @@ function Hero() {
         w-full 
         min-h-[70vh] sm:min-h-[80vh] md:min-h-screen 
         flex items-center justify-center px-4 
-        text-[#0D1B2A] animate-image-reveal
+        text-[#0D1B2A]  text-white bg-black
       ">
       <div className="flex flex-col items-center text-center max-w-[90vw] sm:max-w-[80vw] md:max-w-[900px]">
         {/* Name */}
@@ -20,8 +20,12 @@ function Hero() {
         </p>
 
         {/* Description */}
-        <p className="text-[4vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.5vw] leading-snug -mt-2 text-gray-500 opacity-0 animate-fade-in-delay font-medium font-instrument">
-          Based in San Francisco. Driven by a passion for building refined, <span className="text-blue-700">intuitive </span>experiences.
+        <p className="text-[4vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.5vw] leading-snug -mt-2 text-gray-300 opacity-0 animate-fade-in-delay font-medium font-instrument">
+          Based in San Francisco. Driven by a passion for building refined,{" "}
+          <span className="bg-gradient-to-r from-blue-400 to-blue-700 text-transparent bg-clip-text">
+            intuitive
+          </span>{" "}
+          experiences.
         </p>
       </div>
     </div>
