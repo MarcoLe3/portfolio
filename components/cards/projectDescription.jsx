@@ -5,18 +5,18 @@ function ProjectDescription({ title, tagline, imageUrl, link, titleColor, taglin
   const CardContent = (
     <div
       className={`p-6 cursor-pointer overflow-hidden
-      w-[49vw] h-[500px] 
+      w-[49vw] h-[50vh] 
       flex flex-col justify-between`}
       style={{ backgroundColor: bgColor }}
     >
       {/* Title and Tagline */}
       <div className="space-y-3 mb-4 font-instrument text-center">
-        <h2 className="text-2xl font-medium" style={{ color: titleColor }}>{title}</h2>
-        <p className="text-lg font-medium" style={{ color: taglineColor }}>{tagline}</p>
+        <h2 className="text-[40px] font-semibold" style={{ color: titleColor }}>{title}</h2>
+        <p className="text-[24px] font-semibold" style={{ color: taglineColor }}>{tagline}</p>
       </div>
 
       {/* Image */}
-      <div className="relative w-full h-[250px] mt-auto">
+      <div className="relative w-full h-[30vh] mt-auto">
         <Image
           src={imageUrl}
           alt={title}

@@ -11,7 +11,7 @@ export default function Home() {
       <TopHomeNav/>
       <Hero/>
       <Project/>
-      <Experience/>
+      {/* <Experience/> */}
     </div>
   );
 }
