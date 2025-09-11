@@ -23,10 +23,11 @@ const Projects = () => {
             link="/Portfolio"
           />
           <ProjectDescription
-            title="ManageHealthcare"
+            title="Weather AI"
             bgColor="white"
             tagline="Showcase"
-            imageUrl="/image/portfolio.png"
+            taglineColor="white"
+            titleColor="white"
             link="/Portfolio"
           />
         </div>
