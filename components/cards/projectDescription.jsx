@@ -1,7 +1,9 @@
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import LearnMoreButton from '../button/LearnMore';
 
-function ProjectDescription({ 
+export default function ProjectDescription({ 
   title, 
   tagline, 
   imageUrl,
@@ -13,24 +15,12 @@ function ProjectDescription({
 }) {
   const CardContent = (
     <div
-      className="relative p-6 cursor-pointer overflow-hidden
-      w-[49vw] h-[50vh] 
-      flex flex-col justify-between"
+      className="relative p-6 overflow-hidden
+      flex flex-col justify-start items-center gap-16"
       style={{ backgroundColor: bgColor }}
     >
-      {/* Background image (optional) */}
-      {bgImageUrl && (
-        <Image
-          src={bgImageUrl}
-          alt="Background"
-          fill
-          priority
-          className="object-cover opacity-100 pointer-events-none"
-        />
-      )}
 
-      {/* Title + Tagline */}
-      <div className="space-y-3 mb-4 font-instrument text-center relative z-10">
+      <div className="text-center items-center flex flex-col gap-4 w-[50vw] animation-fade-in">
         <h2 
           className="text-[40px] font-semibold" 
           style={{ color: titleColor }}
@@ -38,28 +28,26 @@ function ProjectDescription({
           {title}
         </h2>
         <p 
-          className="text-[24px] font-semibold" 
+          className="text-[28px] font-semibold" 
           style={{ color: taglineColor }}
         >
           {tagline}
         </p>
+        <LearnMoreButton url="/Portfolio"/>
       </div>
 
-      {/* Foreground Image (optional) */}
       {imageUrl && (
-        <div className="relative w-full h-[30vh] mt-auto z-10">
-          <Image
-            src={imageUrl}
-            alt={title}
-            fill
-            className="object-contain"
-          />
-        </div>
-      )}
+          <div className="relative w-[50vw] h-[50vh]">
+            <Image
+              src={imageUrl}
+              alt={title}
+              fill
+              className='object-contain'
+            />
+          </div>
+        )}
     </div>
   );
 
-  return link ? <Link href={link}>{CardContent}</Link> : CardContent;
+  return CardContent;
 }
-
-export default ProjectDescription;
