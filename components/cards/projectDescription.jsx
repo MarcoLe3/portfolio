@@ -16,11 +16,11 @@ export default function ProjectDescription({
   const CardContent = (
     <div
       className="relative p-6 overflow-hidden
-      flex flex-col justify-start items-center gap-16"
+      flex flex-col justify-start items-center gap-16 w-[80vw] h-[80vh]"
       style={{ backgroundColor: bgColor }}
     >
 
-      <div className="text-center items-center flex flex-col gap-4 w-[50vw] animation-fade-in">
+      <div className="text-center items-center flex flex-col gap-4 w-[50vw]">
         <h2 
           className="text-[40px] font-semibold" 
           style={{ color: titleColor }}
@@ -28,7 +28,7 @@ export default function ProjectDescription({
           {title}
         </h2>
         <p 
-          className="text-[28px] font-semibold" 
+          className="text-[28px]" 
           style={{ color: taglineColor }}
         >
           {tagline}
@@ -37,7 +37,7 @@ export default function ProjectDescription({
       </div>
 
       {imageUrl && (
-          <div className="relative w-[50vw] h-[50vh]">
+          <div className="relative w-[60vw] h-[60vh] overflow-hidden">
             <Image
               src={imageUrl}
               alt={title}
