@@ -15,10 +15,10 @@
     "tagline": "Discover ways to hear without using ears.",
     "titleColor": "black",
     "taglineColor": "black",
-    "link": "/Portfolio",
+    "link": "/Hear_Me",
     "bgColor": "#F3F4F6",
     "bgImageUrl": "/image/hear.png",
-    "bgPos": "center",
-    "bgSize": "110%"
+    "bgPos": "center 40%",
+    "bgSize": "80%"
   }
 ]
