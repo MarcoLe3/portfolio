@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image'; 
 import LearnMoreButton from '../button/LearnMore';
 
-
 export default function ProjectDescription({ 
   title, 
   tagline, 
@@ -11,7 +10,9 @@ export default function ProjectDescription({
   bgImageUrl, 
   titleColor, 
   taglineColor,
-  bgPos
+  bgPos,
+  link,
+  bgSize
 }) {
   return (
     <div
@@ -19,8 +20,8 @@ export default function ProjectDescription({
       style={{ 
         backgroundColor: bgColor,
         backgroundImage: bgImageUrl ? `url(${bgImageUrl})` : 'none',
-        backgroundSize: '70%',
-        backgroundPosition: bgPos,
+        backgroundSize: bgSize,
+        backgroundPosition: bgPos || 'center',
         backgroundRepeat: 'no-repeat'
       }}
     >
@@ -31,9 +32,8 @@ export default function ProjectDescription({
         <p style={{ color: taglineColor }} className="text-[24px]">
           {tagline}
         </p>
-        <LearnMoreButton url="/Portfolio"/>
+        <LearnMoreButton url={link} />
       </div>
     </div>
   );
 }
-

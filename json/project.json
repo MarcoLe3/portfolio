@@ -1,13 +1,14 @@
 [
   {
     "title": "Portfolio",
-    "tagline": "The ultimate way to understand my ideas.",
+    "tagline": "Learn more about what I create.",
     "titleColor": "black",
     "taglineColor": "black",
     "link": "/Portfolio",
     "bgColor": "#F3F4F6",
     "bgImageUrl": "/image/portfolio.png",
-    "bgPos": "center 220%"
+    "bgPos": "center 220%",
+    "bgSize": "70%"
   },
   {
     "title": "Hear Me",
@@ -17,6 +18,7 @@
     "link": "/Portfolio",
     "bgColor": "#F3F4F6",
     "bgImageUrl": "/image/hear.png",
-    "bgPos": "center"
+    "bgPos": "center",
+    "bgSize": "110%"
   }
 ]

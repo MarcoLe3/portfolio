@@ -13,15 +13,16 @@ const Projects = () => {
       <div className="flex flex-wrap gap-2">
         {projects.map((project) => (
           <ProjectDescription
+            key={project.title}
             title={project.title}
             tagline={project.tagline}
-            imageUrl={project.imageUrl}
             link={project.link}
             titleColor={project.titleColor}
             taglineColor={project.taglineColor}
             bgColor={project.bgColor}
             bgImageUrl={project.bgImageUrl}
             bgPos={project.bgPos}
+            bgSize = {project.bgSize}
           />
         ))}
       </div>
