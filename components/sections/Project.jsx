@@ -5,7 +5,7 @@ import ProjectDescription from "../cards/projectDescription";
 
 const Projects = () => {
   return (
-    <section className="w-full py-12 bg-white flex flex-col gap-3 h-[119vh]">
+    <section className="w-full py-12 bg-white flex flex-col gap-3 md:h-[60vh]">
       <h1 className="text-[60px] font-medium text-center bg-gradient-to-b from-[#38434F] to-[#788C9C] text-transparent bg-clip-text">
         Projects
       </h1>
