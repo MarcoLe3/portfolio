@@ -5,12 +5,12 @@ import ProjectDescription from "../cards/projectDescription";
 
 const Projects = () => {
   return (
-    <section className="w-full py-12 bg-white flex flex-col gap-3 h-[110vh]">
+    <section className="w-full py-12 bg-white flex flex-col gap-3 h-[119vh]">
       <h1 className="text-[60px] font-medium text-center bg-gradient-to-b from-[#38434F] to-[#788C9C] text-transparent bg-clip-text">
         Projects
       </h1>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-col md:flex-row flex-wrap gap-2 p-2.5">
         {projects.map((project) => (
           <ProjectDescription
             key={project.title}
