@@ -1,5 +1,7 @@
 import React from "react";
 import SlideShow from "../button/slide";
+import projects from "../../json/project.json";
+import ProjectDescription from "../cards/projectDescription";
 
 const Projects = () => {
   return (
@@ -8,8 +10,20 @@ const Projects = () => {
         Projects
       </h1>
 
-      <div className="flex flex-col gap-2 items-center">
-        <SlideShow />
+      <div className="flex flex-wrap gap-2">
+        {projects.map((project) => (
+          <ProjectDescription
+            title={project.title}
+            tagline={project.tagline}
+            imageUrl={project.imageUrl}
+            link={project.link}
+            titleColor={project.titleColor}
+            taglineColor={project.taglineColor}
+            bgColor={project.bgColor}
+            bgImageUrl={project.bgImageUrl}
+            bgPos={project.bgPos}
+          />
+        ))}
       </div>
     </section>
   );

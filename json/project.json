@@ -1,11 +1,22 @@
 [
   {
     "title": "Portfolio",
-    "tagline": "The ultimate way to understand my ideas. Learn more about what I create. Get to experience my history.",
-    "taglineColor": "black",
-    "imageUrl": "/image/portfolio.png",
+    "tagline": "The ultimate way to understand my ideas.",
     "titleColor": "black",
+    "taglineColor": "black",
     "link": "/Portfolio",
-    "bgColor": "#F3F4F6"
+    "bgColor": "#F3F4F6",
+    "bgImageUrl": "/image/portfolio.png",
+    "bgPos": "center 220%"
+  },
+  {
+    "title": "Hear Me",
+    "tagline": "Discover ways to hear without using ears.",
+    "titleColor": "black",
+    "taglineColor": "black",
+    "link": "/Portfolio",
+    "bgColor": "#F3F4F6",
+    "bgImageUrl": "/image/hear.png",
+    "bgPos": "center"
   }
 ]

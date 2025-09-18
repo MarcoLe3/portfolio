@@ -4,7 +4,7 @@ export default function LearnMoreButton({ url }) {
   return (
     <Link
       href={url}
-      className=" p-4 border border-black hover:bg-black hover:text-white rounded-full text-center"
+      className=" p-2 border border-black hover:bg-black hover:text-white w-[110px] rounded-full text-center"
     >
       Learn More
     </Link>
