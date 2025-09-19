@@ -16,7 +16,7 @@ export default function ProjectDescription({
 }) {
   return (
     <div
-      className="p-6 flex flex-col justify-start items-center gap-6 w-full sm:h-[49vh] md:w-[49vw] h-[320px] md:h-[50vh] overflow-hidden"
+      className="p-6 flex flex-col justify-start items-center gap-6 w-full sm:h-[49vh] md:w-[49vw] h-[320px] lg:h-[50vh] md:h-[32vh] overflow-hidden"
       style={{ 
         backgroundColor: bgColor,
         backgroundImage: bgImageUrl ? `url(${bgImageUrl})` : 'none',
