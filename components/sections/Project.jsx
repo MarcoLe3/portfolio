@@ -2,6 +2,7 @@ import React from "react";
 import SlideShow from "../button/slide";
 import projects from "../../json/project.json";
 import ProjectDescription from "../cards/projectDescription";
+import { Profiler } from 'react';
 
 const Projects = () => {
   return (
@@ -9,23 +10,35 @@ const Projects = () => {
       <h1 className="text-[60px] font-medium text-center bg-gradient-to-b from-[#38434F] to-[#788C9C] text-transparent bg-clip-text">
         Projects
       </h1>
-
+    
       <div className="flex flex-row md:flex-col sm:flex-col flex-wrap gap-2 p-2.5">
         {projects.map((project) => (
-          <ProjectDescription
+          <Profiler
             key={project.title}
-            title={project.title}
-            tagline={project.tagline}
-            link={project.link}
-            titleColor={project.titleColor}
-            taglineColor={project.taglineColor}
-            bgColor={project.bgColor}
-            bgImageUrl={project.bgImageUrl}
-            bgPos={project.bgPos}
-            bgSize = {project.bgSize}
-          />
+            id={project.title}
+            onRender={(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions) => {
+              console.log(`Component: ${id}`);
+              console.log(`Phase: ${phase}`);
+              console.log(`Actual render time: ${actualDuration.toFixed(2)}ms`);
+              console.log(`Base duration: ${baseDuration.toFixed(2)}ms`);
+            }}
+          >
+            <ProjectDescription
+              title={project.title}
+              tagline={project.tagline}
+              link={project.link}
+              titleColor={project.titleColor}
+              taglineColor={project.taglineColor}
+              bgColor={project.bgColor}
+              bgImageUrl={project.bgImageUrl}
+              top_pic={project.top}
+              width_pic={project.width}
+              height_pic={project.height}
+            />
+          </Profiler>
         ))}
       </div>
+
     </section>
   );
 };

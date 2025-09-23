@@ -7,8 +7,9 @@
     "link": "/Portfolio",
     "bgColor": "#F3F4F6",
     "bgImageUrl": "/image/portfolio.png",
-    "bgPos": "center 220%",
-    "bgSize": "95%"
+    "top": "190",
+    "width":"600",
+    "height":"400"
   },
   {
     "title": "Hear Me",
@@ -16,9 +17,10 @@
     "titleColor": "white",
     "taglineColor": "white",
     "link": "/Hear_Me",
-    "bgColor": "black",
+    "bgColor": "#121210",
     "bgImageUrl": "/image/hear.jpg",
-    "bgPos": "43% 100%",
-    "bgSize": "180%"
+    "top": "0",
+    "width": "1000",
+    "height": "1000"
   }
 ]

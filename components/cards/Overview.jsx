@@ -13,4 +13,4 @@ function Overview({text}) {
   )
 }
 
-export default Overview
+export default React.memo(Overview)
