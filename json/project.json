@@ -5,7 +5,7 @@
     "titleColor": "black",
     "taglineColor": "black",
     "link": "/Portfolio",
-    "bgColor": "#F3F4F6",
+    "bgColor": "white",
     "bgImageUrl": "/image/portfolio.png",
     "top": "190",
     "width":"600",
@@ -18,7 +18,7 @@
     "taglineColor": "white",
     "link": "/Hear_Me",
     "bgColor": "#121210",
-    "bgImageUrl": "/image/hear.jpg",
+    "bgImageUrl": "/image/hear.png",
     "top": "0",
     "width": "1000",
     "height": "1000"

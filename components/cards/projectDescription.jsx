@@ -23,8 +23,9 @@ function ProjectDescription({
         src={bgImageUrl}
         loading="lazy"
         quality={100}
-        width={width_pic || 700}
-        height={height_pic || 700}
+        layout="responsive"
+        width={width_pic}
+        height={height_pic}
         style={{ zIndex: 0, position: 'absolute', top: `${top_pic}px` }}
       />
       <div className="text-center flex flex-col gap-2 z-10 items-center pt-4">

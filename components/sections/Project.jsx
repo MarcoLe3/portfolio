@@ -6,12 +6,12 @@ import { Profiler } from 'react';
 
 const Projects = () => {
   return (
-    <section className="w-full py-12 bg-white flex flex-col gap-3 md:h-[60vh]">
+    <section className="w-full py-12 bg-gradient-to-b from-gray-100 to-[white] flex flex-col gap-3 md:h-[60vh]">
       <h1 className="text-[60px] font-medium text-center bg-gradient-to-b from-[#38434F] to-[#788C9C] text-transparent bg-clip-text">
         Projects
       </h1>
     
-      <div className="flex flex-row md:flex-col sm:flex-col flex-wrap gap-2 p-2.5">
+      <div className="flex p-2 flex-wrap gap-2">
         {projects.map((project) => (
           <Profiler
             key={project.title}
