@@ -12,8 +12,8 @@ function Hero() {
       <div className="flex flex-col items-center text-center max-w-[90vw] sm:max-w-[80vw] md:max-w-[900px]">
         <Image
           src="/image/me.png"
-          width={350}
-          height={350}
+          width={250}
+          height={250}
           loading='lazy'
         />
         <h1 className="text-[10vw] sm:text-[10vw] md:text-[10vw] lg:text-[6.5vw] leading-none opacity-0 animate-fade-in font-semibold tracking-tighter">
