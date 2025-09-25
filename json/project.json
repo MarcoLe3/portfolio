@@ -17,7 +17,7 @@
     "titleColor": "white",
     "taglineColor": "white",
     "link": "/Hear_Me",
-    "bgColor": "#121210",
+    "bgColor": "black",
     "bgImageUrl": "/image/hear.png",
     "top": "0",
     "width": "1000",
