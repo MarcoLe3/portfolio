@@ -16,7 +16,7 @@ function Hero() {
           height={600}
           loading='lazy'
         />
-        <h1 className="text-[10vw] sm:text-[10vw] md:text-[10vw] lg:text-[6.5vw] leading-none opacity-0 animate-fade-in font-semibold tracking-tighter">
+        <h1 className="text-[10vw] sm:text-[10vw] md:text-[10vw] lg:text-[6vw] leading-none opacity-0 animate-fade-in font-bold tracking-tighter">
           MARCO LEE
         </h1>
 
