@@ -7,13 +7,13 @@ function Hero() {
         w-full 
         min-h-[70vh]
         flex justify-center px-4 
-        text-[#0D1B2A]  text-black bg-white
+        text-[#0D1B2A]  text-black bg-white items-center
       ">
-      <div className="flex flex-col items-center text-center max-w-[90vw] sm:max-w-[80vw] md:max-w-[900px]">
+      <div className="flex flex-col gap-1 items-center text-center max-w-[90vw] sm:max-w-[80vw] md:max-w-[900px]">
         <Image
           src="/image/me.png"
-          width={250}
-          height={250}
+          width={500}
+          height={600}
           loading='lazy'
         />
         <h1 className="text-[10vw] sm:text-[10vw] md:text-[10vw] lg:text-[6.5vw] leading-none opacity-0 animate-fade-in font-semibold tracking-tighter">
